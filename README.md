@@ -4,13 +4,16 @@ This repository implements an advanced image captioning model using deep learnin
 **Features**
 
 **Feature Extraction:** Utilizes the pre-trained MobileNetV2 model to extract rich feature representations of images.
+
 **Caption Generation:** Employs an LSTM-based sequence generator with an embedding layer initialized using GloVe embeddings.
+
 **Attention Mechanism:** Incorporates a multi-head attention layer for better context modeling during caption generation.
+
 **BLEU Score Evaluation:** Evaluates the generated captions using BLEU metrics to assess quality and relevance.
 
-****How It Works**
+**How It Works**
 
-**Feature Extraction****
+**Feature Extraction**
 
 • The MobileNetV2 model is used to extract features from images.
 • Features are stored in a serialized file (features.pkl) for later use.
