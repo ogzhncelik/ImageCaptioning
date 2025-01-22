@@ -11,7 +11,7 @@ This repository implements an advanced image captioning model using deep learnin
 
 **BLEU Score Evaluation:** Evaluates the generated captions using BLEU metrics to assess quality and relevance.
 
-**How It Works**
+
 
 **Feature Extraction**
 
