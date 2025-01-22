@@ -8,17 +8,20 @@ This repository implements an advanced image captioning model using deep learnin
 **BLEU Score Evaluation:** Evaluates the generated captions using BLEU metrics to assess quality and relevance.
 
 **How It Works
+
 Feature Extraction:**
 
 • The MobileNetV2 model is used to extract features from images.
 • Features are stored in a serialized file (features.pkl) for later use.
 
 **Text Preprocessing:**
+
 Captions are cleaned and tokenized.
 A tokenizer is created to map words to indices and vice versa.
 GloVe embeddings are used to initialize the embedding layer for better semantic understanding.
 
 **Model Architecture:**
+
 The model includes;
 • An image encoder for visual feature extraction.
 • A text decoder with LSTM layers to generate captions.
@@ -26,11 +29,13 @@ The model includes;
 Outputs predictions using a dense layer with a softmax activation.
 
 **Training:**
+
 • Training data is split into train and test sets.
 • A data generator provides batches of sequences and features for training.
 • The model is trained using categorical cross-entropy loss with the Adam optimizer.
 
 **Evaluation:**
+
 • BLEU-1 and BLEU-2 scores are computed to measure the quality of generated captions against actual captions.
 
 The project utilizes the Flickr8k dataset for training.
