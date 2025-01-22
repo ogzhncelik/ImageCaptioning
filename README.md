@@ -1,7 +1,7 @@
 ImageCaptioning
 This repository implements an advanced image captioning model using deep learning techniques. The project aims to generate meaningful captions for input images by leveraging a combination of feature extraction, sequence modeling, and attention mechanisms.
 
-**Features**
+**FEATURES**
 
 **Feature Extraction:** Utilizes the pre-trained MobileNetV2 model to extract rich feature representations of images.
 
@@ -13,18 +13,18 @@ This repository implements an advanced image captioning model using deep learnin
 
 
 
-**Feature Extraction**
+**FEATURE EXTRACTION**
 
 • The MobileNetV2 model is used to extract features from images.
 • Features are stored in a serialized file (features.pkl) for later use.
 
-**Text Preprocessing:**
+**TEXT PREPROCESSING**
 
 Captions are cleaned and tokenized.
 A tokenizer is created to map words to indices and vice versa.
 GloVe embeddings are used to initialize the embedding layer for better semantic understanding.
 
-**Model Architecture:**
+**MODEL ARCHITECTURE**
 
 The model includes;
 • An image encoder for visual feature extraction.
@@ -32,13 +32,13 @@ The model includes;
 • A multi-head attention mechanism to enhance context understanding between image and text.
 Outputs predictions using a dense layer with a softmax activation.
 
-**Training:**
+**TRAINING**
 
 • Training data is split into train and test sets.
 • A data generator provides batches of sequences and features for training.
 • The model is trained using categorical cross-entropy loss with the Adam optimizer.
 
-**Evaluation:**
+**EVALUATION**
 
 • BLEU-1 and BLEU-2 scores are computed to measure the quality of generated captions against actual captions.
 
