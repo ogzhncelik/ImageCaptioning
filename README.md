@@ -3,13 +3,13 @@ This repository implements an advanced image captioning model using deep learnin
 
 **FEATURES**
 
-**Feature Extraction:** Utilizes the pre-trained MobileNetV2 model to extract rich feature representations of images.
+• **Feature Extraction:** Utilizes the pre-trained MobileNetV2 model to extract rich feature representations of images.
 
-**Caption Generation:** Employs an LSTM-based sequence generator with an embedding layer initialized using GloVe embeddings.
+• **Caption Generation:** Employs an LSTM-based sequence generator with an embedding layer initialized using GloVe embeddings.
 
-**Attention Mechanism:** Incorporates a multi-head attention layer for better context modeling during caption generation.
+• **Attention Mechanism:** Incorporates a multi-head attention layer for better context modeling during caption generation.
 
-**BLEU Score Evaluation:** Evaluates the generated captions using BLEU metrics to assess quality and relevance.
+• **BLEU Score Evaluation:** Evaluates the generated captions using BLEU metrics to assess quality and relevance.
 
 
 
@@ -20,9 +20,9 @@ This repository implements an advanced image captioning model using deep learnin
 
 **TEXT PREPROCESSING**
 
-Captions are cleaned and tokenized.
-A tokenizer is created to map words to indices and vice versa.
-GloVe embeddings are used to initialize the embedding layer for better semantic understanding.
+• Captions are cleaned and tokenized.
+• A tokenizer is created to map words to indices and vice versa.
+• GloVe embeddings are used to initialize the embedding layer for better semantic understanding.
 
 **MODEL ARCHITECTURE**
 
@@ -46,7 +46,11 @@ The project utilizes the Flickr8k dataset for training.
 Pre-trained GloVe embeddings provide semantic initialization for the embedding layer.
 
 **ImageCaptioning.py:** Main script for training and inference.
+
 **features.pkl:** Serialized file containing image features.
+
 **tokenizer.pkl:** Tokenizer for text preprocessing.
+
 **max_length.pkl:** Maximum sequence length used in training.
+
 **mobilenetv2_model.h5:** Trained model weights.
