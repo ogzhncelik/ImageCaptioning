@@ -1,4 +1,6 @@
-This repository implements an advanced image captioning model using deep learning techniques. The project aims to generate meaningful captions for input images by leveraging a combination of feature extraction, sequence modeling, and attention mechanisms.
+This repository implements an advanced image captioning model using deep learning techniques. 
+
+The project aims to generate meaningful captions for input images by leveraging a combination of feature extraction, sequence modeling, and attention mechanisms.
 
 **FEATURES**
 
